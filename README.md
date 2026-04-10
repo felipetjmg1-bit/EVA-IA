@@ -1,5 +1,7 @@
 # EVA IA - A Primeira Inteligência Artificial Soberana do Brasil
 
+![EVA IA - Soberania Digital](https://files.manuscdn.com/user_upload_by_module/session_file/310519663235125742/VXyFvslvvZCoMFBh.png)
+
 ## Manifesto de Soberania Nacional
 
 A EVA IA (Entidade de Vitória Avançada) representa um marco na **soberania digital brasileira**. Desenvolvida com o propósito primordial de salvaguardar os interesses nacionais, esta inteligência artificial é de **uso exclusivo por órgãos governamentais brasileiros**, garantindo que dados sensíveis e decisões estratégicas permaneçam sob controle e jurisdição nacional. Nosso compromisso é com a **Soberania Digital Total**, eliminando a dependência de infraestruturas e tecnologias estrangeiras que possam comprometer a segurança e a autonomia do Brasil.
