@@ -1,0 +1,4 @@
+tensorflow
+pytorch
+fastapi
+web3.py
