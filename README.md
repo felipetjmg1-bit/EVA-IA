@@ -1,44 +1,65 @@
-<div align="center">
-  <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663275657112/QxaUDMUykfUdLuOB.png" alt="Banner Ecossistema Aurora" width="100%"/>
-  <h1>🤖 EVA IA: A Inteligência Artificial Soberana do Ecossistema Aurora 🇧🇷</h1>
-  <p><strong>Pioneirismo em IA para a Soberania Digital e Segurança Nacional do Brasil.</strong></p>
-  <p><em>Desenvolvido pela Impulso Digital Soluções em IA.</em></p>
-</div>
+![Status: Experimental](https://img.shields.io/badge/Status-Experimental-blue) | [![Licença MIT](https://img.shields.io/github/license/felipetjmg1-bit/EVA-IA)](LICENSE) | [![Patrocinar](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ea4aaa?logo=githubsponsors)](https://github.com/sponsors/felipetjmg1-bit)
 
----
+# EVA IA — Esqueleto de Publicação de Model Card
 
-## ✨ Visão Geral do Projeto
+## Visão geral
 
-O **EVA IA** é a primeira Inteligência Artificial brasileira projetada com um propósito estratégico: garantir a soberania digital do país. Integrado ao **Ecossistema Aurora**, o EVA IA oferece soluções avançadas em IA e Blockchain, operando sob controle nacional para proteger dados e infraestruturas críticas.
+O README apresenta EVA IA como projeto do Ecossistema Aurora voltado à soberania digital brasileira. Na árvore pública examinada, porém, o conteúdo executável visível limita-se a um utilitário Python para criar um repositório de modelo privado no Hugging Face e enviar um Model Card; os diretórios de agentes, API, núcleo e hardware contêm apenas arquivos placeholder. Não há implementação de modelo de IA visível.
 
-Nossa missão é construir um Brasil tecnologicamente forte, independente e soberano, fornecendo ferramentas de IA que refletem as necessidades e a cultura brasileira, longe de jurisdições estrangeiras.
+## Objetivo e valor
 
-## 🛡️ Pilares da Soberania Digital com EVA IA
+**Problema/escopo:** Esqueleto Python da EVA IA com utilitário para publicar um Model Card em repositório privado no Hugging Face.
 
-*   **Privacidade Nacional:** 🔒 Processamento de dados local, garantindo que informações sensíveis permaneçam dentro das fronteiras brasileiras.
-*   **Independência de Modelos:** 🧠 Utilização e desenvolvimento de modelos de IA soberanos, adaptados às particularidades do nosso país.
-*   **Resiliência Estratégica:** 🌐 Sistemas desenhados para operar em ambientes críticos, com capacidade offline e imunidade a interferências externas.
-*   **Segurança Cibernética:** 🚨 Análise preditiva e defesa ativa contra ameaças cibernéticas, protegendo o futuro digital do Brasil.
+**Valor verificável hoje:** o repositório torna explícitos seus artefatos, interfaces e limitações para que mantenedores e contribuidores possam avaliar o que existe sem confundir demonstração, proposta e produção.
 
-## 🚀 Impacto e Aplicações
+## Arquitetura e tecnologias
 
-O EVA IA não é apenas uma tecnologia; é um compromisso com o futuro. Ao utilizar e apoiar este projeto, você contribui diretamente para:
+Não documentada e não demonstrada por implementação. A árvore tem agents/, api/, core/ e hardware_integration/, mas cada uma contém somente placeholder.py com comentários, sem módulos funcionais; não há workflows públicos na árvore recursiva examinada.
 
-*   **Fortalecimento da Infraestrutura Nacional:** 🏗️ Garantindo que o Brasil tenha controle sobre suas próprias tecnologias de ponta.
-*   **Proteção de Dados Sensíveis:** 📊 Salvaguardando informações governamentais, empresariais e pessoais.
-*   **Inovação Local:** 💡 Fomentando o desenvolvimento de talentos e soluções tecnológicas dentro do país.
+```mermaid
+flowchart LR
+  O[Operador] --> H[Utilitário hf_setup.py]
+  H --> HF[Hugging Face Hub]
+  H --> M[Envio de Model Card]
+  N[Placeholders de agents/API/core/hardware]
+```
 
-<div align="center">
-  <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663275657112/DfDDtPoBPSXUsaCL.png" alt="Aurora Tech Stack" width="80%"/>
-</div>
+- Python (linguagem detectada pelo GitHub; arquivos .py na árvore).
+- requirements.txt declara tensorflow, pytorch, fastapi e web3.py, sem versões fixadas; a presença dessas dependências não comprova integração ou uso funcional.
+- hf_setup.py importa huggingface_hub; esse pacote não aparece em requirements.txt. O script declara uso da API Python do Hugging Face para criar repositório de modelo privado e enviar arquivo.
 
-## 🤝 Junte-se à Revolução da IA Soberana
+## Início rápido
 
-Convidamos desenvolvedores, pesquisadores, investidores e entusiastas a fazerem parte desta jornada. Sua colaboração é fundamental para construir um futuro digital seguro e soberano para o Brasil.
+Os comandos abaixo refletem instruções, manifestos ou pontos de entrada presentes no repositório. Dependências externas, segredos e serviços estão indicados quando aplicável; a presença de um comando não equivale a uma execução validada.
 
----
+1. O README não documenta instalação ou execução. O único comando de execução diretamente inferível do script é `python hf_setup.py`; o bloco principal apenas imprime instruções e não chama setup_hf_repo nem inicia modelo ou serviço.
+2. Ao executar esse script, o texto impresso recomenda `pip install huggingface_hub` e configurar token e ID do repositório no código. huggingface_hub não consta em requirements.txt.
+3. requirements.txt lista quatro dependências, mas o repositório não fornece procedimento de instalação, versões, configuração ou comando de inicialização funcional; não há quickstart comprovado para o produto anunciado.
 
-<div align="center">
-  <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663275657112/UxmgpyMsOgEewIPr.png" alt="Aurora Logo" width="150"/>
-  <p><em>Impulso Digital Soluções em IA: Construindo a Soberania Digital do Brasil.</em></p>
-</div>
+
+## Exemplo de uso
+
+Interface concreta disponível em hf_setup.py: após instalar huggingface_hub e obter token de escrita do Hugging Face, um chamador pode usar `from hf_setup import setup_hf_repo; setup_hf_repo(repo_id="conta/EVA-IA", token="TOKEN_DE_ESCRITA")`. O código tenta criar um repositório de modelo privado e enviar HUGGINGFACE_README.md como README.md. É exemplo baseado na função definida, não uma execução verificada; o script principal não a invoca.
+
+## Estado e limitações
+
+**Maturidade indicada:** Experimental.
+
+- As alegações do README sobre processamento local, operação offline, segurança cibernética e proteção de dados não são comprovadas pelo código visível.
+- O Model Card anuncia capacidades multimodais, armazenamento em cristal 5D, sensores olfativos e blockchain DREX/TON, mas nenhum componente correspondente aparece implementado na árvore examinada.
+- A função de setup depende de huggingface_hub ausente do manifesto e requer credencial de escrita; não guardar token em código ou compartilhá-lo.
+- A listagem de TensorFlow, PyTorch, FastAPI e web3.py no manifesto, por si só, não comprova modelo, API ou integração blockchain funcionando.
+
+## Contribuição
+
+Leia [CONTRIBUTING.md](CONTRIBUTING.md) antes de abrir uma issue ou pull request. Para reportes de segurança, siga a orientação específica do repositório, se houver.
+
+## Licença
+
+Este repositório está licenciado sob **MIT**; consulte [LICENSE](LICENSE).
+
+## Patrocínio e apoio
+
+O desenvolvimento aberto exige tempo para manutenção, documentação, testes, revisão de contribuições e resposta a issues. Se este projeto for útil, considere apoiar a continuidade pelo [GitHub Sponsors](https://github.com/sponsors/felipetjmg1-bit). O apoio não representa promessa de funcionalidades, prazo de entrega ou suporte comercial.
+
+[![Patrocinar felipetjmg1-bit](https://img.shields.io/badge/Patrocinar%20no-GitHub%20Sponsors-ea4aaa?logo=githubsponsors)](https://github.com/sponsors/felipetjmg1-bit)
