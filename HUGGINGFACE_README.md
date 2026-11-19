@@ -1,34 +1,42 @@
-# Model Card: EVA IA - A Primeira Inteligência Artificial Soberana do Brasil
+# EVA IA
 
-## Visão Geral
+## Resumo
 
-A EVA IA (Entidade de Vitória Avançada) é um modelo de inteligência artificial de vanguarda, desenvolvido com o objetivo estratégico de garantir a **soberania nacional do Brasil**. Este modelo representa um avanço significativo na proteção dos interesses e da segurança do país no cenário digital global.
+EVA IA é uma iniciativa experimental de pesquisa do ecossistema Impulso Digital. Este repositório **não contém atualmente pesos de modelo, tokenizer, pipeline de inferência ou uma implementação de IA multimodal**. Este documento descreve o projeto e seu estágio de desenvolvimento, não um modelo pronto para uso.
 
-## Propósito e Acesso Restrito
+## Estado atual
 
-O propósito fundamental da EVA IA é servir exclusivamente aos **órgãos governamentais brasileiros**. Seu design e implementação visam assegurar que todas as operações e análises de dados sensíveis sejam realizadas dentro de um ambiente controlado e soberano, livre de influências ou dependências externas.
+O conteúdo verificável deste repositório inclui:
+- um utilitário Python (hf_setup.py) para criar um repositório privado no Hugging Face Hub e enviar este Model Card;
+- diretórios reservados a futuras implementações, atualmente com arquivos placeholder;
+- documentação inicial de escopo e intenção.
 
-**Este modelo é de acesso restrito e não está disponível para uso público ou comercial.** A distribuição e o acesso são estritamente limitados a entidades governamentais autorizadas, conforme as diretrizes de segurança e soberania nacional do Brasil.
+O utilitário de publicação não treina, hospeda nem executa um modelo. A dependência huggingface_hub precisa ser instalada separadamente até que seja adicionada ao manifesto de dependências.
 
-## Diferenciais Tecnológicos
+## Visão de pesquisa
 
-A EVA IA incorpora tecnologias inovadoras para garantir desempenho, segurança e autonomia:
+A proposta de longo prazo explora uma arquitetura de IA soberana, com pesquisa em interação multimodal, governança e proteção de dados, integração com sistemas e infraestruturas nacionais mediante especificação e autorização, e armazenamento avançado, incluindo hipóteses de codificação em mídia óptica/cristal.
 
-*   **Integração Multimodal:** Capacidade de processar e correlacionar informações de diversas modalidades (texto, imagem, áudio, etc.).
-*   **Armazenamento em Cristal 5D:** Solução de armazenamento de dados ultra-segura e de longa duração.
-*   **Sensores Olfativos:** Percepção ambiental avançada para contextualização de dados.
-*   **Blockchain DREX/TON:** Utilização de tecnologia blockchain para imutabilidade e segurança de registros.
+Esses tópicos são **linhas de pesquisa**, não funcionalidades implementadas ou validadas neste repositório. Não há evidência aqui de integração operacional com órgãos governamentais, Drex, TON, sensores olfativos, armazenamento 5D ou infraestrutura on-premises.
 
-## Desenvolvimento e Propriedade
+## Uso
 
-**Autor:** Felipe Marcos de Abreu Aquino (CEO Impulso Digital)
+Não há atualmente checkpoint ou pipeline de inferência para carregar com from_pretrained. O script hf_setup.py é somente um utilitário de publicação de documentação. Para usá-lo, instale huggingface_hub, forneça um token com permissão de escrita por variável de ambiente ou mecanismo seguro equivalente e informe o ID do repositório. **Nunca grave tokens diretamente no código ou no Model Card.**
 
-O desenvolvimento da EVA IA é uma iniciativa de propriedade intelectual exclusiva de Felipe Marcos de Abreu Aquino. A arquitetura, o código e os conceitos subjacentes são protegidos por direitos autorais e cláusulas de propriedade intelectual, reforçando o compromisso com a soberania tecnológica do Brasil.
+## Segurança e privacidade
 
-## Diretriz Técnica: Soberania Digital Total
+Não envie dados pessoais, confidenciais ou governamentais a este projeto como se ele fosse um serviço seguro ou aprovado. Este repositório não implementa controles de segurança de produção, criptografia de dados em repouso, gestão robusta de chaves, auditoria independente ou certificação.
 
-Construída com **Python** e otimizada para **clusters de servidores locais (On-premise)**, a EVA IA garante a **Soberania Digital Total**, eliminando a dependência de infraestruturas de nuvem estrangeiras. Esta abordagem assegura que a infraestrutura tecnológica e os dados permaneçam integralmente sob controle nacional.
+## Maturidade e limitações
 
----
+**Status: Experimental / estrutura inicial de publicação.**
 
-*© 2026 Felipe Marcos de Abreu Aquino. Todos os direitos reservados.*
+Para declarar um modelo utilizável, serão necessários código de arquitetura e inferência implementado, pesos e tokenizer com licença e procedência documentadas, avaliação reproduzível, testes de segurança e documentação de implantação.
+
+## Autoria
+
+Iniciativa de Felipe Marcos de Abreu Aquino, Impulso Digital Soluções em I.A. Ltda. A autoria e a proposta do projeto não implicam parceria, endosso, contratação, certificação ou validação por instituições públicas ou privadas.
+
+## Licença
+
+Consulte o arquivo LICENSE do repositório.
