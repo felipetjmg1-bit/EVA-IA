@@ -1,4 +1,4 @@
-![Status: Experimental](https://img.shields.io/badge/Status-Utilit%C3%A1rio%20em%20desenvolvimento-blue) | [![Licença MIT](https://img.shields.io/github/license/felipetjmg1-bit/EVA-IA)](LICENSE) | [![Patrocinar](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ea4aaa?logo=githubsponsors)](https://github.com/sponsors/felipetjmg1-bit)
+![Status: Utilitário em desenvolvimento](https://img.shields.io/badge/Status-Utilit%C3%A1rio%20em%20desenvolvimento-blue) | [![Licença MIT](https://img.shields.io/github/license/felipetjmg1-bit/EVA-IA)](LICENSE) | [![Patrocinar](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ea4aaa?logo=githubsponsors)](https://github.com/sponsors/felipetjmg1-bit)
 
 <p align="center"><img src="PROJECT-OVERVIEW.svg" alt="Diagrama explicativo de EVA IA" width="100%"></p>
 
@@ -46,7 +46,7 @@ Interface concreta disponível em hf_setup.py: após instalar huggingface_hub e 
 
 ## Estado e limitações
 
-**Maturidade indicada:** Experimental.
+**Estado de entrega:** utilitário de publicação de Model Card em desenvolvimento.
 
 - As alegações do README sobre processamento local, operação offline, segurança cibernética e proteção de dados não são comprovadas pelo código visível.
 - O Model Card anuncia capacidades multimodais, armazenamento em cristal 5D, sensores olfativos e blockchain DREX/TON, mas nenhum componente correspondente aparece implementado na árvore examinada.
